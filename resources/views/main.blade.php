@@ -16,11 +16,15 @@
                 <li class="px-3">
                     <a style="text-decoration: none; color:white;" href="{{ route('main') }}">Home</a>
                 </li>
-                <li class="px-3">Comics</li>
+                <li class="px-3"><a style="text-decoration: none; color:white;"
+                        href="{{ asset('comics.index') }}">Comics</a></li>
                 <li class="px-3">Other</li>
             </ul>
         </nav>
     </header>
+    <main>
+        @yield('content')
+    </main>
 
 </body>
 
