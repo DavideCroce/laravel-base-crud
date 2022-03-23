@@ -1,7 +1,7 @@
 @extends('main')
 
 @section('content')
-    <div class="container" style="margin-top: 100px">
+    <div class="container" style="margin-top: 100px; margin-bottom:100px;">
         <div class="row">
             @forelse($comics as $comic)
                 <div class="col-3">
@@ -18,7 +18,7 @@
             @empty
                 <h1>There are no comics</h1>
             @endforelse
-            <a href="{{ route('comics.create') }}" class="btn btn-success col-3">Add a new comic</a>
         </div>
+        <a href="{{ route('comics.create') }}" class="btn btn-success">Add a new comic</a>
     </div>
 @endsection

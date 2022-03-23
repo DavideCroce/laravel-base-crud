@@ -4,7 +4,7 @@
     <div class="card container" style="margin-top: 200px;">
         <div class="row align-items-center">
             <div class="col-2">
-                <img src="{{ $comic->thumb }}" alt="">
+                <img class="img-fluid" src="{{ $comic->thumb }}" alt="">
             </div>
             <div class="col-10">
                 <h2><strong>TITLE:</strong> {{ $comic->title }}</h2>
