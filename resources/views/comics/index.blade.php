@@ -18,6 +18,7 @@
             @empty
                 <h1>There are no comics</h1>
             @endforelse
+            <a href="{{ route('comics.create') }}" class="btn btn-success col-3">Add a new comic</a>
         </div>
     </div>
 @endsection
